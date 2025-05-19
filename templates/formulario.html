@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación de Trabajo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Evaluación de Trabajo</h1>
+        <form method="POST" class="evaluation-form">
+            <div class="form-group">
+                <label for="nombre">Nombre del Evaluado:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="portada">¿La portada está completa?</label>
+                <select id="portada" name="portada">
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="resolucion">¿La resolución del problema es correcta y está completa?</label>
+                <select id="resolucion" name="resolucion">
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="conclusion">¿La conclusión de todos los integrantes es coherente?</label>
+                <select id="conclusion" name="conclusion">
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="justificado">¿El texto está justificado?</label>
+                <select id="justificado" name="justificado">
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="ortografia">¿El texto está libre de errores ortográficos?</label>
+                <select id="ortografia" name="ortografia">
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <button type="submit" class="submit-button">Evaluar</button>
+        </form>
+    </div>
+</body>
+</html>

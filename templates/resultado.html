@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado de la Evaluación</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Resultado de la Evaluación</h1>
+        <div class="resultado-box">
+            <h2>Detalles de la Evaluación</h2>
+            <p><strong>Nombre del Evaluado:</strong> <span class="result-value">{{ nombre }}</span></p>
+            <p><strong>Puntaje Obtenido:</strong> <span class="result-value">{{ puntaje }}</span> puntos</p>
+            <p><strong>Calificación:</strong> <span class="result-value">{{ calificacion }}</span></p>
+            <a href="/" class="button">Evaluar Otro Trabajo</a>
+        </div>
+    </div>
+</body>
+</html>
